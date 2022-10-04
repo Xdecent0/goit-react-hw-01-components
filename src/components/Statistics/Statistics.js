@@ -1,6 +1,7 @@
 import React from 'react';
+import styles from './statistics.module.css';
 
-export default Statistics = ({ title, stats }) => (
+const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
     <h2 className={styles.title}>{title}</h2>
 
@@ -14,3 +15,5 @@ export default Statistics = ({ title, stats }) => (
     </ul>
   </section>
 );
+
+export default Statistics;

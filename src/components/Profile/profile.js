@@ -1,6 +1,7 @@
 import React from 'react';
+import styles from './profile.module.css';
 
-export default Profile = ({ name, tag, location, avatar, stats }) => (
+const Profile = ({ name, tag, location, avatar, stats }) => (
   <div className={styles.profile}>
     <div className={styles.description}>
       <img src={avatar} alt="avatar" className={styles.avatar} />
@@ -25,3 +26,5 @@ export default Profile = ({ name, tag, location, avatar, stats }) => (
     </ul>
   </div>
 );
+
+export default Profile;
